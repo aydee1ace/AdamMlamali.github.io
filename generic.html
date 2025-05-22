@@ -10,121 +10,141 @@
 	<body class="is-preload">
 
 		<!-- Wrapper -->
-			<div id="wrapper">
+		<div id="wrapper">
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Adam's Portfolio</a>
+			<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="logo">Adam's Portfolio</a>
+			</header>
+
+			<!-- Nav -->
+			<nav id="nav">
+				<ul class="links">
+					<li><a href="index.html">Portfolio Projects</a></li>
+					<li class="active"><a href="generic.html">Motor Claims</a></li>
+					<li><a href="elements.html">Upcoming Project</a></li>
+				</ul>
+				<ul class="icons">
+					<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+				</ul>
+			</nav>
+
+			<!-- Main -->
+			<div id="main">
+
+				<!-- Post -->
+				<section class="post">
+					<header class="major">
+						<h1>Motor Insurance Claims<br />Prediction Project</h1>
 					</header>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li><a href="index.html">Portfolio Projects</a></li>
-							<li class="active"><a href="generic.html">Motor Claims</a></li>
-							<li><a href="elements.html">Upcoming Project</a></li>
+					<div class="image main"><img src="images/pic01.jpg" alt="" /></div>
+
+					<h2>Introduction</h2>
+					<p>
+						The dataset used for this project was sourced from: 
+						<a href="https://www.kaggle.com/datasets/xiaomengsun/car-insurance-claim-data" target="_blank">
+							Kaggle - Car Insurance Claim Data
+						</a>.
+					</p>
+					<p>
+						The data includes around 8,000 records of car insurance policyholders. 
+						It features various attributes such as age, income, gender, and claim history. 
+						Two target variables are included:
+						<ul>
+							<li>Whether a claim has occurred (classification).</li>
+							<li>The total cost of the claim, if a claim has been made (regression).</li>
 						</ul>
-						<ul class="icons">
-							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+					</p>
+
+					<h2>Objective</h2>
+					<p>
+						The project is divided into two parts:
+						<ol>
+							<li><strong>Classification:</strong> Predicting whether a claim will occur.</li>
+							<li><strong>Regression:</strong> Predicting the value of a claim, assuming one has occurred.</li>
+						</ol>
+					</p>
+
+					<h2>Results</h2>
+					<p>
+						The performance of the regression model was as follows:
+						<ul>
+							<li><strong>RMSE:</strong> 8383.78</li>
+							<li><strong>MAE:</strong> 3515.91</li>
 						</ul>
-					</nav>
+						We can see that the RMSE was slightly higher than what was observed during training, 
+						but still relatively in line. There is room for potential improvement, such as:
+						<ul>
+							<li>Advanced feature engineering</li>
+							<li>Exploring feature importance</li>
+							<li>Building ensemble models</li>
+						</ul>
+					</p>
+				</section>
 
-				<!-- Main -->
-					<div id="main">
+			</div>
 
-						<!-- Post -->
-							<section class="post">
-								<header class="major">
-									<h1>Motor Insurance Claims Project</h1>
-									<p>Classification & Regression Analysis of Car Insurance Claims</p>
-								</header>
-								<div class="image main"><img src="images/pic01.jpg" alt="Motor Insurance Data" /></div>
-								
-								<h2>Introduction</h2>
-								<p>
-									This project uses a dataset sourced from: 
-									<a href="https://www.kaggle.com/datasets/xiaomengsun/car-insurance-claim-data" target="_blank">Kaggle - Car Insurance Claim Data</a>. 
-									The dataset contains approximately 8,000 records of car insurance policyholders. It includes features such as:
-								</p>
-								<ul>
-									<li>Age</li>
-									<li>Income</li>
-									<li>Gender</li>
-									<li>Claim history</li>
-									<li>And more</li>
-								</ul>
-								<p>
-									The dataset includes two target variables:
-									<ol>
-										<li>Whether a claim has occurred (binary classification)</li>
-										<li>The total cost of the claim, if one has occurred (regression)</li>
-									</ol>
-								</p>
+			<!-- Footer -->
+			<footer id="footer">
+				<section>
+					<form method="post" action="#">
+						<div class="fields">
+							<div class="field">
+								<label for="name">Name</label>
+								<input type="text" name="name" id="name" />
+							</div>
+							<div class="field">
+								<label for="email">Email</label>
+								<input type="text" name="email" id="email" />
+							</div>
+							<div class="field">
+								<label for="message">Message</label>
+								<textarea name="message" id="message" rows="3"></textarea>
+							</div>
+						</div>
+						<ul class="actions">
+							<li><input type="submit" value="Send Message" /></li>
+						</ul>
+					</form>
+				</section>
+				<section class="split contact">
+					<section>
+						<h3>Phone</h3>
+						<p><a href="#">(000) 000-0000</a></p>
+					</section>
+					<section>
+						<h3>Email</h3>
+						<p><a href="#">adammlamali@outlook.com</a></p>
+					</section>
+					<section>
+						<h3>Social</h3>
+						<ul class="icons alt">
+							<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</section>
+				</section>
+			</footer>
 
-								<h2>Objective</h2>
-								<p>
-									The aim of this project is to solve two core problems:
-									<ol>
-										<li><strong>Classification:</strong> Predicting if a policyholder will make a claim.</li>
-										<li><strong>Regression:</strong> Estimating the total value of a claim, assuming one occurs.</li>
-									</ol>
-								</p>
+			<!-- Copyright -->
+			<div id="copyright">
+				<ul><li>&copy; Adam Lamali</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+			</div>
 
-								<h2>Performance</h2>
-								<p>
-									Regression model performance:
-									<ul>
-										<li><strong>RMSE:</strong> 8,383.78</li>
-										<li><strong>MAE:</strong> 3,515.91</li>
-									</ul>
-									These results indicate that while the RMSE on the test set was slightly higher than on the training data, it is still fairly consistent. There is room for further improvement through:
-									<ul>
-										<li>Additional feature engineering</li>
-										<li>Investigating feature importance</li>
-										<li>Creating ensemble models</li>
-									</ul>
-								</p>
+		</div>
 
-							</section>
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
-					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="3"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-						</section>
-						<section class="split contact">
-							<section>
-								<h3>Phone</h3>
-								<p><a href="#">(000) 000-0000</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="#">adammlamali@outlook.com</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands alt
+	</body>
+</html>
